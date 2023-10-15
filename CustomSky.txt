@@ -1,0 +1,15 @@
+local LightingService = game:GetService("Lighting")
+
+for i, v in pairs(LightingService:GetChildren()) do
+   if v:IsA("Sky") then
+      v:Destroy()
+      end
+end
+
+local NewSky = Instance.new("Sky", LightingService)
+NewSky.SkyboxBk = "rbxassetid://600830446"
+NewSky.SkyboxDn = "rbxassetid://600831635"
+NewSky.SkyboxFt = "rbxassetid://600832720"
+NewSky.SkyboxLf = "rbxassetid://600886090"
+NewSky.SkyboxRt = "rbxassetid://600833862"
+NewSky.SkyboxUp = "rbxassetid://600835177"
